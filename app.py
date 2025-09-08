@@ -314,7 +314,7 @@ with col2:
         jd_pasted_text = st.text_area("Paste the job description here...", height=195, key="jd_pasted_text", on_change=clear_results)
 
 
-if st.button("🚀 Enhance My Resume", use_container_width=True, type="primary"):
+if st.button("🚀 Review My Resume", use_container_width=True, type="primary"):
     resume_text = ""
     if resume_input_method == "Upload a File (PDF or TXT)" and uploaded_file:
         resume_text = extract_text_from_file(uploaded_file)
